@@ -5,4 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Java Pathshala Code Wisdom</name>
   <description>Java Pathshala Code Wisdom</description>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>JP_APPS</module>
+  </modules>
 </project>
