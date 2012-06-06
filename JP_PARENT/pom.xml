@@ -6,7 +6,8 @@
   <name>Java Pathshala Code Wisdom</name>
   <description>Java Pathshala Code Wisdom</description>
   <packaging>pom</packaging>
+  
   <modules>
-  	<module>JP_APPS</module>
+  	<module>../JP_APPS</module>
   </modules>
 </project>
