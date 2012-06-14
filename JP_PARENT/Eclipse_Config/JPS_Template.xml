@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="filecomment_context" deleted="false" description="Comment for created Java files" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.filecomment" name="filecomment">/*
+ * File: ${file_name}
+ * Date: ${date}
+ *
+ * This source code is part of Java Pathshala-Wisdom Being Shared.
+ * This program is protected by copyright law but you are authorise to learn 
+ * &amp; gain ideas from it. Its unauthorised use is explicitly prohibited &amp; any 
+ * addition &amp; removal of material. If want to suggest any changes,
+ * you are welcome to provide your comments on GitHub Social Code Area.
+ * Its unauthorised use gives Java Pathshala the right to obtain retention orders
+ * and to prosecute the authors of any infraction.
+ * 
+ * Visit us at www.javapathshala.com
+ */</template></templates>
