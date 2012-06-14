@@ -9,5 +9,6 @@
   
   <modules>
   	<module>../JP_APPS</module>
+  	<module>../JP_DESIGNS</module>
   </modules>
 </project>
