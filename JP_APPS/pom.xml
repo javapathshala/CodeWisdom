@@ -3,10 +3,10 @@
   <parent>
     <artifactId>JP_PARENT</artifactId>
     <groupId>JAVA_PATHSHALA</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-    <relativePath>../JP_PARENT</relativePath>
+    <version>1.0</version>
+   <relativePath>../JP_PARENT</relativePath>
   </parent>
   <artifactId>JP_APPS</artifactId>
   <name>JP APPS</name>
-  <description>JP Applications</description>
+  <description>Module have small applications</description>
 </project>
