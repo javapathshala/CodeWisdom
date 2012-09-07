@@ -13,5 +13,6 @@
   	<module>../JP_DATALOADER</module>
   	<module>../JP_LUCENE</module>
   	<module>../JP_KONCEPT</module>
+  	<module>JP_APPS</module>
   </modules>
 </project>
