@@ -2,13 +2,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>JAVA_PATHSHALA</groupId>
   <artifactId>JP_PARENT</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <name>Java Pathshala Code Wisdom</name>
   <description>Java Pathshala Code Wisdom</description>
   <packaging>pom</packaging>
   
   <modules>
-  	<module>../JP_APPS</module>
+  	<module>../JP_COMMON</module>
   	<module>../JP_DESIGNS</module>
+  	<module>../JP_DATALOADER</module>
+  	<module>../JP_LUCENE</module>
+  	<module>../JP_KONCEPT</module>
   </modules>
 </project>
