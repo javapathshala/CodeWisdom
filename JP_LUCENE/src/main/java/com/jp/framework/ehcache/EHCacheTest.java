@@ -1,4 +1,4 @@
-package com.tech.framework.ehcache;
+package com.jp.framework.ehcache;
 
 import java.util.List;
 

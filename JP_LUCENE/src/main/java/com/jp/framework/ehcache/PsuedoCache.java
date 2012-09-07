@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tech.framework.ehcache;
+package com.jp.framework.ehcache;
 
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;

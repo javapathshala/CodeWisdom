@@ -1,7 +1,7 @@
 /**
  * Copywrite @ Dimit Chadha
  */
-package com.tech.framework.ehcache;
+package com.jp.framework.ehcache;
 
 /**
  * @author Dimit Chadha

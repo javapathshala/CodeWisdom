@@ -11,7 +11,7 @@
  * use gives COCC the right to obtain retention orders
  * and to prosecute the authors of any infraction.
  */
-package com.tech.framework.lucene;
+package com.jp.framework.lucene;
 
 /**
  * Description : To index specify the cached value

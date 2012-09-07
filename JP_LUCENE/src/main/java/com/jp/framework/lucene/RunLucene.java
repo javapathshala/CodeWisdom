@@ -1,4 +1,4 @@
-package com.tech.framework.lucene;
+package com.jp.framework.lucene;
 
 import java.io.IOException;
 import java.util.ArrayList;
