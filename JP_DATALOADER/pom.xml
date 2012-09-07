@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>JP_PARENT</artifactId>
+    <groupId>JAVA_PATHSHALA</groupId>
+    <version>1.0</version>
+ 		<relativePath>../JP_PARENT</relativePath>
+  </parent>
+  <artifactId>JP_DATALOADER</artifactId>
+  <name>Data Loader</name>
+  <description>Data Loader</description>
+  <dependencies>
+		<dependency>
+			<groupId>com.infomata.data</groupId>
+			<artifactId>datafile</artifactId>
+			<version>1</version>
+		</dependency>
+		  
+		<dependency>
+			<groupId>JAVA_PATHSHALA</groupId>
+			<artifactId>JP_COMMON</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+</dependencies>
+</project>
