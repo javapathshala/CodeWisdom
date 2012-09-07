@@ -11,7 +11,7 @@ public class Component implements IComponent {
 
 
 	/* (non-Javadoc)
-	 * @see com.tech.application.pattern.decorator.IComponent#doStuff()
+	 * @see com.jp.application.pattern.decorator.IComponent#doStuff()
 	 */
 
 	public void doStuff() {

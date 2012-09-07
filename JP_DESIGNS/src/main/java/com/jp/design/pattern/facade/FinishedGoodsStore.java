@@ -12,7 +12,7 @@ public class FinishedGoodsStore implements Store {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.tech.application.pattern.facade.Store#getGoods()
+	 * @see com.jp.application.pattern.facade.Store#getGoods()
 	 */
 	
 	public Goods getGoods() {
