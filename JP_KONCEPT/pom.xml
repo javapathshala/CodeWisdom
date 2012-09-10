@@ -9,6 +9,7 @@
   <artifactId>JP_KONCEPT</artifactId>
   <name>Basic Concepts</name>
   <description>Basic Concepts</description>
+  <packaging>jar</packaging>
   
   <dependencies>
 		
