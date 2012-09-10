@@ -17,6 +17,8 @@
 		<module>../JP_APPS</module>
 		<!--module>../JP_MQ</module-->
 		<!-- module>JP_EJB_LISTENER</module-->
+		<module>../SPRING_APP</module>
+		<module>../SPRING_WEB</module>
 	</modules>
 
 	<dependencies>
