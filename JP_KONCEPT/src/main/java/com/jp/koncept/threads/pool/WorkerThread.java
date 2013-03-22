@@ -1,6 +1,6 @@
 /*
- * File: TxThreadLocal.java
- * Date: 19-Mar-2013
+ * File: WorkerThread.java
+ * Date: 21-Mar-2013
  *
  * This source code is part of Java Pathshala-Wisdom Being Shared.
  * This program is protected by copyright law but you are authorise to learn 
@@ -12,24 +12,30 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.koncept.local.threads;
+package com.jp.koncept.threads.pool;
 
 /**
  * @author dimit.chadha
  */
-public class TxThreadLocal {
+public class WorkerThread implements Runnable {
 
-	public static final ThreadLocal<Transaction> txThreadLocal = new ThreadLocal<Transaction>();
+	private String command;
 
-	public static void set(Transaction tx) {
-		txThreadLocal.set(tx);
+	public WorkerThread(String command) {
+		this.command = command;
 	}
 
-	public static Transaction get() {
-		return txThreadLocal.get();
+	public void run() {
+		System.out.println(Thread.currentThread().getName()+" Start. Command = "+command);
+		processCommand();
+		System.out.println(Thread.currentThread().getName()+" End.");
 	}
 
-	public static void unset() {
-		txThreadLocal.remove();
+	/**
+	 * 
+	 */
+	private void processCommand() {
+		System.out.println(Thread.currentThread().getName()+" Processing Command.. ");		
 	}
+
 }

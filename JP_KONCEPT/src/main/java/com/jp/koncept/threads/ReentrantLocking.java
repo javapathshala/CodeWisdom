@@ -31,7 +31,6 @@ public class ReentrantLocking {
 	public static void main(String[] args) {
 		ReentrantLocking reentrantLocking = new ReentrantLocking();
 		reentrantLocking.goAhead();
-
 	}
 
 	/**
@@ -46,7 +45,6 @@ public class ReentrantLocking {
 	 * @return
 	 */
 	private Runnable newRunable() {
-
 		return new Runnable() {
 
 			public void run() {
@@ -54,15 +52,11 @@ public class ReentrantLocking {
 					try {
 						if (lock.tryLock(500, TimeUnit.MILLISECONDS)) {
 							try {
-
 								System.out.println("locked thread " + Thread.currentThread().getName());
-
 								Thread.sleep(1000);
-
 							} finally {
 								lock.unlock();
 								System.out.println("unlocked locked thread " + Thread.currentThread().getName());
-
 							}
 							break;
 						} else {
@@ -70,13 +64,10 @@ public class ReentrantLocking {
 						}
 
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				} while (true);
-
 			}
 		};
 	}
-
 }

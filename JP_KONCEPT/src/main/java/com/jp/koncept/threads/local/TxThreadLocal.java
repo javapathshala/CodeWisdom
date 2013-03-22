@@ -1,5 +1,5 @@
 /*
- * File: TxService.java
+ * File: TxThreadLocal.java
  * Date: 19-Mar-2013
  *
  * This source code is part of Java Pathshala-Wisdom Being Shared.
@@ -12,17 +12,24 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.koncept.local.threads;
+package com.jp.koncept.threads.local;
 
 /**
  * @author dimit.chadha
  */
-public class TxService {
+public class TxThreadLocal {
 
-	public void getTxDetails() {
-		Transaction tx = TxThreadLocal.get();
-		// System.out.println("Transaction ID: " + tx.getTxId());
-		// System.out.println("Transaction Name: " + tx.getTxName());
-		System.out.println(tx);
+	public static final ThreadLocal<Transaction> txThreadLocal = new ThreadLocal<Transaction>();
+
+	public static void set(Transaction tx) {
+		txThreadLocal.set(tx);
+	}
+
+	public static Transaction get() {
+		return txThreadLocal.get();
+	}
+
+	public static void unset() {
+		txThreadLocal.remove();
 	}
 }

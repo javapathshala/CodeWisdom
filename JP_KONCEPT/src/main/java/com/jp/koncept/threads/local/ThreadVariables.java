@@ -1,5 +1,5 @@
 /*
- * File: InitialValue.java
+ * File: ThreadVariables.java
  * Date: 20-Mar-2013
  *
  * This source code is part of Java Pathshala-Wisdom Being Shared.
@@ -12,13 +12,12 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.koncept.local.threads;
+package com.jp.koncept.threads.local;
+
+import java.util.HashMap;
 
 /**
  * @author dimit.chadha
  */
-public abstract class InitialValue {
-
-	public abstract Object create();
-
+public class ThreadVariables extends HashMap<String, Object> {
 }

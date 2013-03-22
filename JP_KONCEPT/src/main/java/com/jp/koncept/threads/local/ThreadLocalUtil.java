@@ -12,7 +12,7 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.koncept.local.threads;
+package com.jp.koncept.threads.local;
 
 /**
  * @author dimit.chadha 
