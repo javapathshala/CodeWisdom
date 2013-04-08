@@ -86,7 +86,7 @@ public class MsgListenerBean
 //				String sMessage  = ((TextMessage) aMessage).getText();
 //				logger.info("Jms Message picked up by Listener is  : "+sMessage);
 //				aMessage.acknowledge();
-//				String newMessage=sMessage+"-"+"BIB";
+//				String newMessage=sMessage+"-"+"";
 //				logger.info("Processing message recieved");
 //				logger.info("New Message is :: " +newMessage);
 //				sendToOutQueue(msgId,newMessage);
@@ -133,7 +133,7 @@ public class MsgListenerBean
 				String sMessage  = ((TextMessage) aMessage).getText();
 				logger.info("Jms Message picked up by Listener is  : "+sMessage);
 				aMessage.acknowledge();
-				//String newMessage=sMessage+"-"+"BIB";
+				//String newMessage=sMessage+"-"+"";
 				logger.info("Processing message recieved");
 				//logger.info("New Message is :: " +newMessage);
 				//sendToOutQueue(msgId,newMessage);
@@ -173,7 +173,7 @@ public class MsgListenerBean
 		makeConnection();
 		try {
 			 sender = qSession.createSender(queue);
-			 logger.info("Sending Recieved message to Out Queue (TEST.OUT) after processing. Message Changed to (originalMessage-BIB)");
+			 logger.info("Sending Recieved message to Out Queue (TEST.OUT) after processing. Message Changed to (originalMessage-)");
 			 Message message=qSession.createTextMessage(newMessage);
 			 logger.info("New Jms Message is :: "+message);
 			 logger.info("calling sendToOutQueue()");
