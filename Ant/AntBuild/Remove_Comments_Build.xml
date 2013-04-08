@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<project name="Comment_BIB_pages" default="comment.all">
+	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" />
+
+	<target name="comment.all">
+		<antcall target="transverse.All" />
+		<antcall target="refresh.webproject" />
+	</target>
+
+	<target name="transverse.All">
+
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP admin/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP A/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP A/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP B/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP BR/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP B/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP C/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP E/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP I/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP /web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+		
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP Payment/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+
+		<eclipse.convertPath property="webdynamic.sourceProject" resourcePath="JP Web/web/pages" />
+		<antcall target="CheckOut.Files" description="Check Out the Files" />
+
+	</target>
+
+
+	<target name="CheckOut.Files">
+		<echo message="${webdynamic.sourceProject}"/>
+		<echo message="***********************************************************************" />
+		<echo message="               CheckingOut Files From ClearCase    " />
+		<echo message="***********************************************************************" />
+		<taskdef resource="net/sf/antcontrib/antlib.xml" />
+		<foreach param="file_var" target="ccCheckOut">
+			<path>
+				<fileset dir="${webdynamic.sourceProject}">
+					<include name="*.xml" />
+					<exclude name="**/.lock" />
+				</fileset>
+			</path>
+		</foreach>
+		<antcall target="Comments.Files" description="Delete the comments" />
+	</target>
+
+	<target name="ccCheckOut">
+		<cccheckout viewpath="${file_var}" reserved="true" nowarn="true" comment="Ant CheckedOut File Successfully" />
+	</target>
+
+	<target name="Comments.Files">
+
+		<echo message="*******************************************************************************" />
+		<echo message="                            Commenting Files         " />
+		<echo message="*******************************************************************************" />
+		<xmltask todir="${webdynamic.sourceProject}" report="false">
+			<fileset dir="${webdynamic.sourceProject}" includes="*.xml">
+			</fileset>
+			<remove path="//child::comment()" />
+		</xmltask>
+	</target>
+
+	<target name="refresh.webproject">
+		<echo message="*********************************" />
+		<echo message="           REFRESHING JP        " />
+		<echo message="*********************************" />
+		<eclipse.refreshLocal resource="JP Web" depth="infinite" />
+	</target>
+
+</project>

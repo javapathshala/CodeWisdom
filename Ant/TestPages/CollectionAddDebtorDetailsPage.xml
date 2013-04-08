@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bbib:page xmlns:bbib="http://www.bbib.com" id="CollectionAddDebtorDetailsPage">
+  <bbib:helpid>
+<bbib:label>help/Make Collection Step 3.htm</bbib:label>
+</bbib:helpid>
+  <bbib:location>Collection</bbib:location>
+  <bbib:form>
+<bbib:navigationtarget id="FinancialTransactionAddDebtorDetailsActionActivity"/>
+</bbib:form>
+
+  <bbib:insertimage height="3" id="transparentSpacer" type="line" width="1"/>
+  <bbib:dottedline/>
+
+<bbib:navigationbar>
+	<bbib:navigation target="New">
+	<bbib:navigationtarget id="FinTxAddDebtorDetailsPrintActionActivity"/>
+	<bbib:images id="Print" shownew="Yes" type="icon"/>
+	</bbib:navigation>
+</bbib:navigationbar>
+	  
+   <table border="0" cellpadding="3" cellspacing="2" width="100%">
+   <tr>
+   <bbib:displayable>
+	<bbib:showrule type="true">
+		<bbib:cargosource>isAmend</bbib:cargosource>
+	</bbib:showrule>
+	 <td class="step_heading">Step 2 of 2: Enter Debtor Details</td>
+ </bbib:displayable>
+ <bbib:displayable>
+	<bbib:showrule type="false">
+		<bbib:cargosource>isAmend</bbib:cargosource>
+	</bbib:showrule>
+	   <td class="step_heading">Step 3 of 3: Enter Debtor Details</td>
+ </bbib:displayable>
+  </tr>
+  </table>
+  <table border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr class="vt">
+    	<td class="bodytextblue">
+		<bbib:label>Page </bbib:label>
+	  	<bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+	  	<bbib:datavalue required="no">
+            <bbib:compositevalue>
+              <bbib:cargosource>
+                pageIndex
+              </bbib:cargosource>
+            </bbib:compositevalue>
+          </bbib:datavalue>
+          <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+          <bbib:label> of </bbib:label>
+          <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+          <bbib:datavalue required="no">
+            <bbib:compositevalue>
+              <bbib:cargosource>
+                noOfPages
+              </bbib:cargosource>
+            </bbib:compositevalue>
+          </bbib:datavalue>
+	</td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+		<tr>
+		  <td class="normalar" width="50%">
+			<span class="fontbold">Total Value of this collection:</span>
+		  </td>
+		  <td class="normalal">
+		  <bbib:label>GBP</bbib:label>
+		  <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+						  <bbib:datavalue required="yes">
+				<bbib:compositevalue>
+				  <bbib:cargosource>ftAmount</bbib:cargosource>
+				</bbib:compositevalue>
+			  </bbib:datavalue>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="normalar" width="50%">
+			<span class="fontbold">Number of Debtors:</span>
+		  </td>
+		  <td class="normalal">
+		  	<bbib:space hard="yes"/>
+		  	<bbib:space hard="yes"/>
+			<bbib:datavalue required="yes">
+			<bbib:compositevalue>
+				  <bbib:cargosource>thirdPartyCount</bbib:cargosource>
+			</bbib:compositevalue>
+			</bbib:datavalue>
+		  </td>
+		</tr>
+<tr/>
+	</table>
+
+<table>
+<tr/>
+<tr/>
+<tr>
+  	<td class="normal" colspan="2">If you are likely to spend longer than 30 minutes entering data on this screen, you should save the collection before 30 minutes elapses to ensure no data is lost. Please go to the View Collections screen to retrieve your collection and continue working on it.</td>
+</tr>
+<tr/>
+<tr/>
+</table>
+
+  <bbib:navigationbar class="ar" simple="true">
+	  <bbib:navigation>
+	        <bbib:showrule type="true">
+      <bbib:cargosource>
+			ftDoubleButton
+      </bbib:cargosource>
+      </bbib:showrule>
+	    <bbib:name>back</bbib:name>
+	    <bbib:images id="Back" type="button"/>
+	  </bbib:navigation>
+	  <bbib:navigation>
+	  	        <bbib:showrule type="true">
+      <bbib:cargosource>
+			ftDoubleButton
+      </bbib:cargosource>
+            </bbib:showrule>
+	    <bbib:name>cancel</bbib:name>
+		<bbib:images id="Cancel" type="button"/>
+	  </bbib:navigation>
+  	  <bbib:navigation>
+  	  	        <bbib:showrule type="true">
+      <bbib:cargosource>
+			ftDoubleButton
+      </bbib:cargosource>
+            </bbib:showrule>
+	    <bbib:name>total</bbib:name>
+		<bbib:images id="Total" type="button"/>
+	  </bbib:navigation>
+	  <bbib:navigation>
+	  	        <bbib:showrule type="true">
+      <bbib:cargosource>
+			ftDoubleButton
+      </bbib:cargosource>
+            </bbib:showrule>
+	    <bbib:name>save</bbib:name>
+	    <bbib:images id="Save" type="button"/>
+	  </bbib:navigation>
+	  <bbib:navigation>
+	  	        <bbib:showrule type="true">
+      <bbib:cargosource>
+			ftDoubleButton
+      </bbib:cargosource>
+            </bbib:showrule>
+	    <bbib:name>continue</bbib:name>
+	    <bbib:images id="Continue" type="button"/>
+	    </bbib:navigation>
+  </bbib:navigationbar>
+  <bbib:sectiontitle>
+		  <bbib:label>Collection From:</bbib:label>
+	  </bbib:sectiontitle>
+  <bbib:table border="0" cellpadding="2" cellspacing="0" summary="This table displays the list of Collection Debtors. It shows debtor name, sort code and account number, collection reference and the amount of the collection" width="100%">
+	   <bbib:name>thirdPartyTable</bbib:name>
+	   <bbib:column>
+      <bbib:name>beneficiaryName</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Debtor Name:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      	<bbib:displayable>
+		<bbib:showrule type="false">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+		<bbib:compositevalue>
+          <bbib:label><![CDATA[##lt##span class='bodytexthighlight'##gt##*]]></bbib:label>
+
+          <bbib:cargosource>thirdPartyTable/beneficiaryName</bbib:cargosource>
+          <bbib:label><![CDATA[##lt##/span##gt##]]></bbib:label>
+        </bbib:compositevalue>
+
+       </bbib:displayable>
+       <bbib:displayable>
+		<bbib:showrule type="true">
+			<bbib:cargosource>thirdPartyTable/validEntry</bbib:cargosource>
+		</bbib:showrule>
+		<bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/beneficiaryName</bbib:cargosource>
+        </bbib:compositevalue>
+        </bbib:displayable>
+      </bbib:row>
+
+
+
+    </bbib:column>
+
+     <bbib:column>
+      <bbib:name>sortCode</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Sort Code:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      <bbib:displayable>
+		<bbib:showrule type="false">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+        <bbib:label><![CDATA[##lt##span class='bodytexthighlight'##gt##]]></bbib:label>
+          <bbib:cargosource>thirdPartyTable/sortCode</bbib:cargosource>
+          <bbib:label><![CDATA[##lt##/span##gt##]]></bbib:label>
+        </bbib:compositevalue>
+        </bbib:displayable>
+        <bbib:displayable>
+		<bbib:showrule type="true">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+
+          <bbib:cargosource>thirdPartyTable/sortCode</bbib:cargosource>
+        </bbib:compositevalue>
+        </bbib:displayable>
+        <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+      </bbib:row>
+    </bbib:column>
+
+    <bbib:column>
+      <bbib:name>accountNumber</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Account Number:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      <bbib:displayable>
+		<bbib:showrule type="false">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+        <bbib:label><![CDATA[##lt##span class='bodytexthighlight'##gt##]]></bbib:label>
+          <bbib:cargosource>thirdPartyTable/accountNumber</bbib:cargosource>
+          <bbib:label><![CDATA[##lt##/span##gt##]]></bbib:label>
+        </bbib:compositevalue>
+        </bbib:displayable>
+        <bbib:displayable>
+		<bbib:showrule type="true">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/accountNumber</bbib:cargosource>
+
+        </bbib:compositevalue>
+        </bbib:displayable>
+      </bbib:row>
+    </bbib:column>
+    <bbib:column>
+      <bbib:name>collectionType</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Collection Type:</bbib:label>
+      </bbib:columnheading>
+       <bbib:row>
+
+	  <bbib:staticselects file="collectiontype.properties" name="collectionType" selected="thirdPartyTable/collectionType"/>
+
+      </bbib:row>
+    </bbib:column>
+    <bbib:column>
+      <bbib:name>detailTransactionRef</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Collection Reference:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      <bbib:textinput maxlength="18" size="25">
+			<bbib:name>detailTransactionRef</bbib:name>
+            <bbib:type>TEXT</bbib:type>
+          <bbib:datavalue required="yes">
+       <bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/detailTransactionRef</bbib:cargosource>
+        </bbib:compositevalue>
+       </bbib:datavalue>
+         </bbib:textinput>
+         </bbib:row>
+    </bbib:column>
+
+     <bbib:column>
+      <bbib:name>ftDetail</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Amount:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+       <bbib:label>GBP</bbib:label>
+          <bbib:textinput maxlength="12" size="16">
+			<bbib:name>ftDetail</bbib:name>
+            <bbib:type>TEXT</bbib:type>
+            <bbib:datavalue required="yes">
+
+
+        <bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/ftDetail</bbib:cargosource>
+        </bbib:compositevalue>
+
+        </bbib:datavalue>
+        </bbib:textinput>
+
+      </bbib:row>
+    </bbib:column>
+
+    </bbib:table>  
+    <bbib:navigationbar class="ar" simple="true">
+	  <bbib:navigation>
+	     <bbib:showrule type="equal">
+	    <bbib:cargosource>hasPrevious</bbib:cargosource>
+	    	<bbib:equal>true</bbib:equal>
+	    </bbib:showrule>
+	    <bbib:name>previous</bbib:name>
+	    <bbib:images id="Previous" type="button"/>
+	  </bbib:navigation>
+	  <bbib:navigation>
+    <bbib:showrule type="equal">
+
+    <bbib:cargosource>hasNext</bbib:cargosource>
+        <bbib:equal>true</bbib:equal>
+    </bbib:showrule>
+    <bbib:name>next</bbib:name>
+      <bbib:images id="Next" type="button"/>
+    </bbib:navigation>
+  </bbib:navigationbar>
+  
+  <bbib:navigationbar class="ar" simple="true">
+
+	  <bbib:navigation>
+	    <bbib:name>back</bbib:name>
+	    <bbib:images id="Back" type="button"/>
+	  </bbib:navigation>
+	  <bbib:navigation>
+	    <bbib:name>cancel</bbib:name>
+		<bbib:images id="Cancel" type="button"/>
+	  </bbib:navigation>
+	<bbib:navigation>
+	    <bbib:name>total</bbib:name>
+		<bbib:images id="Total" type="button"/>
+	</bbib:navigation>
+	
+
+	  <bbib:navigation>
+	    <bbib:name>save</bbib:name>
+	    <bbib:images id="Save" type="button"/>
+	  </bbib:navigation>
+	  <bbib:navigation>
+
+	    <bbib:name>continue</bbib:name>
+	    <bbib:images id="Continue" type="button"/>
+	    </bbib:navigation>
+  </bbib:navigationbar>
+
+</bbib:page>

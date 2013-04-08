@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project basedir="." default="Dimit" name="Ant">
+	<taskdef classname= "com.oopsconsultancy.xmltask.ant.XmlTask" name="xmltask" />
+	<target name="Dimit">
+
+		<xmltask todir="../Ant/pages" report="true">
+
+			<fileset dir="../Ant/TestPages" includes="*.xml">
+			</fileset>
+
+			<remove path="//child::comment()" />
+
+		</xmltask>
+	</target>
+
+
+</project>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bbib:page xmlns:bbib="http://www.bbib.com" header="no" id="ColAddDebDetailsReportPrintPage" navbar="no">
+  <bbib:form>
+<bbib:navigationtarget id="FinTxAddDebtorDetailsPrintActionActivity"/>
+</bbib:form>
+	<table width="100%"> 
+<tr>
+	<td class="normalvb">##lt##noscript##gt##JavaScript is disabled on your browser, Please use File - Print or Ctl+P to print window##lt##/noscript##gt##</td>
+</tr>
+<tr>
+    <td class="boldals">Collection<br/>
+<br/>
+</td>
+    <td class="ar">
+<bbib:insertimage alt="BARCLAYS" height="50" id="Logotype" type="logo" width="164"/>
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+<bbib:insertimage height="1" id="GreySpacer" type="line" width="100%"/>
+</td>
+</tr>
+
+<tr>
+	<bbib:displayable>
+	<bbib:showrule type="true">
+		<bbib:cargosource>isAmend</bbib:cargosource>
+	</bbib:showrule>
+	 <td class="step_heading">Step 2 of 2: Enter Debtor Details</td>
+ 	</bbib:displayable>
+ 	<bbib:displayable>
+	<bbib:showrule type="false">
+		<bbib:cargosource>isAmend</bbib:cargosource>
+	</bbib:showrule>
+	   <td class="step_heading">Step 3 of 3: Enter Debtor Details</td>
+	 </bbib:displayable>
+</tr>
+    <tr class="vt">
+    	<td class="bodytextblue">
+		<bbib:label>Page </bbib:label>
+	  	<bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+	  	<bbib:datavalue required="no">
+            <bbib:compositevalue>
+              <bbib:cargosource>
+                pageIndex
+              </bbib:cargosource>
+            </bbib:compositevalue>
+          </bbib:datavalue>
+          <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+          <bbib:label> of </bbib:label>
+          <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+          <bbib:datavalue required="no">
+            <bbib:compositevalue>
+              <bbib:cargosource>
+                noOfPages
+              </bbib:cargosource>
+            </bbib:compositevalue>
+          </bbib:datavalue>
+	</td>
+	</tr>
+			<tr>
+		  <td class="normalar" width="50%">
+			<span class="fontbold">Total Value of this collection:</span>
+		  </td>
+		  <td class="normalal">
+		  <bbib:label>GBP</bbib:label>
+		  <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+						  <bbib:datavalue required="yes">
+				<bbib:compositevalue>
+				  <bbib:cargosource>ftAmount</bbib:cargosource>
+				</bbib:compositevalue>
+			  </bbib:datavalue>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="normalar" width="50%">
+			<span class="fontbold">Number of Debtors:</span>
+		  </td>
+		  <td class="normalal">
+		  	<bbib:space hard="yes"/>
+		  	<bbib:space hard="yes"/>
+			<bbib:datavalue required="yes">
+			<bbib:compositevalue>
+				  <bbib:cargosource>thirdPartyCount</bbib:cargosource>
+			</bbib:compositevalue>
+			</bbib:datavalue>
+		  </td>
+		</tr>
+		<tr>
+		      <td class="boldals">Collection From<br/>
+<br/>
+</td>
+		</tr>
+	</table>
+<bbib:table border="0" cellpadding="2" cellspacing="0" summary="This table displays the list of Collection Debtors. It shows debtor name, sort code and account number, collection reference and the amount of the collection" width="100%">
+	   <bbib:name>thirdPartyTable</bbib:name>
+	   <bbib:column>
+      <bbib:name>beneficiaryName</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Debtor Name:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      	<bbib:displayable>
+		<bbib:showrule type="false">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+		<bbib:compositevalue>
+          <bbib:label><![CDATA[##lt##span class='bodytexthighlight'##gt##*]]></bbib:label>
+
+          <bbib:cargosource>thirdPartyTable/beneficiaryName</bbib:cargosource>
+          <bbib:label><![CDATA[##lt##/span##gt##]]></bbib:label>
+        </bbib:compositevalue>
+
+       </bbib:displayable>
+       <bbib:displayable>
+		<bbib:showrule type="true">
+			<bbib:cargosource>thirdPartyTable/validEntry</bbib:cargosource>
+		</bbib:showrule>
+		<bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/beneficiaryName</bbib:cargosource>
+        </bbib:compositevalue>
+        </bbib:displayable>
+      </bbib:row>
+
+
+
+    </bbib:column>
+
+     <bbib:column>
+      <bbib:name>sortCode</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Sort Code:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      <bbib:displayable>
+		<bbib:showrule type="false">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+        <bbib:label><![CDATA[##lt##span class='bodytexthighlight'##gt##]]></bbib:label>
+          <bbib:cargosource>thirdPartyTable/sortCode</bbib:cargosource>
+          <bbib:label><![CDATA[##lt##/span##gt##]]></bbib:label>
+        </bbib:compositevalue>
+        </bbib:displayable>
+        <bbib:displayable>
+		<bbib:showrule type="true">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+
+          <bbib:cargosource>thirdPartyTable/sortCode</bbib:cargosource>
+        </bbib:compositevalue>
+        </bbib:displayable>
+        <bbib:space hard="yes"/>
+<bbib:space hard="yes"/>
+      </bbib:row>
+    </bbib:column>
+
+    <bbib:column>
+      <bbib:name>accountNumber</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Account Number:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+      <bbib:displayable>
+		<bbib:showrule type="false">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+        <bbib:label><![CDATA[##lt##span class='bodytexthighlight'##gt##]]></bbib:label>
+          <bbib:cargosource>thirdPartyTable/accountNumber</bbib:cargosource>
+          <bbib:label><![CDATA[##lt##/span##gt##]]></bbib:label>
+        </bbib:compositevalue>
+        </bbib:displayable>
+        <bbib:displayable>
+		<bbib:showrule type="true">
+		 	<bbib:cargosource>
+				thirdPartyTable/validEntry
+			</bbib:cargosource>
+		</bbib:showrule>
+        <bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/accountNumber</bbib:cargosource>
+
+        </bbib:compositevalue>
+        </bbib:displayable>
+      </bbib:row>
+    </bbib:column>
+    <bbib:column>
+      <bbib:name>collectionType</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Collection Type:</bbib:label>
+      </bbib:columnheading>
+       <bbib:row nowrap="true">
+       <bbib:displayable>
+		<bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/collectionTypeDisplay</bbib:cargosource>
+        </bbib:compositevalue>
+        </bbib:displayable>
+      </bbib:row>
+    </bbib:column>
+    <bbib:column>
+      <bbib:name>detailTransactionRef</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Collection Reference:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row>
+       <bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/detailTransactionRef</bbib:cargosource>
+        </bbib:compositevalue>
+         </bbib:row>
+    </bbib:column>
+
+     <bbib:column>
+      <bbib:name>ftDetail</bbib:name>
+      <bbib:type>TEXT</bbib:type>
+      <bbib:columnheading>
+        <bbib:label>Amount:</bbib:label>
+      </bbib:columnheading>
+      <bbib:row nowrap="true">
+       <bbib:label>GBP</bbib:label>
+<bbib:space hard="yes"/>
+       <bbib:displayable>
+        <bbib:datavalue required="yes">
+        <bbib:compositevalue>
+          <bbib:cargosource>thirdPartyTable/ftDetail</bbib:cargosource>
+        </bbib:compositevalue>
+        </bbib:datavalue>
+		</bbib:displayable>
+      </bbib:row>
+    </bbib:column>
+    </bbib:table>  
+     <script language="Javascript">
+  window.print();
+ </script>
+</bbib:page>
