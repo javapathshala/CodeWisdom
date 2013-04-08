@@ -8,4 +8,11 @@
 		<relativePath>../JP_PARENT</relativePath>
 	</parent>
 	<artifactId>JP_COMMON</artifactId>
+	<dependencies>
+	<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>hibernate-core</artifactId>
+	<version>4.1.2</version>
+</dependency>
+            </dependencies>
 </project>
