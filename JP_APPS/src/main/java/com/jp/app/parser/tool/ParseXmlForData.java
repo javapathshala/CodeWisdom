@@ -68,7 +68,7 @@ public class ParseXmlForData extends JFrame{
 	 
 	
 	public ParseXmlForData(){
-		setTitle("BIB Help Contents Generation Utility");
+		setTitle("Help Contents Generation Utility");
 		setSize(400, 300);
 		setVisible(true);
 		c = getContentPane();
@@ -355,8 +355,8 @@ public class ParseXmlForData extends JFrame{
 		if(nl != null && nl.getLength() > 0) {
 			for(int i = 0 ; i < nl.getLength();i++) {
 				Element el = (Element)nl.item(i);				
-				String fieldId = getTextValue(el,"bbib:name");
-				String type = getTextValue(el,"bbib:type");
+				String fieldId = getTextValue(el,"jp:name");
+				String type = getTextValue(el,"jp:type");
 				if(fieldId!=null){
 					if("text".equalsIgnoreCase(type)){
 						fieldId="simple_"+fieldId+"_text";					

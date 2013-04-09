@@ -11,7 +11,7 @@ public class DBHelper {
 
 	final static String driverClass = "com.ibm.db2.jcc.DB2Driver";
 
-	final static String connectionURL = "jdbc:db2://10.50.1.11:50001/BIB640D";
+	final static String connectionURL = "jdbc:db2://xxx.xxx.xxx.xx:portnumber/databasename";
 
 	final static String userID = "root";
 

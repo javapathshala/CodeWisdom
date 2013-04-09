@@ -62,7 +62,7 @@ public class ParseXmlSAXData extends JFrame {
 	static Document dom;
 
 	public ParseXmlSAXData() {
-		setTitle("BIB Help Contents Generation Utility");
+		setTitle("Help Contents Generation Utility");
 		setSize(400, 300);
 		setVisible(true);
 		c = getContentPane();

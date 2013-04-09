@@ -42,9 +42,9 @@ public class ParseXmlSax extends DefaultHandler {
 
 	public void endElement(String uri, String localName, String qName)
 			throws SAXException {
-		if (qName.equalsIgnoreCase("bbib:name")) {
+		if (qName.equalsIgnoreCase("jp:name")) {
 				key=s;	
-		} else if (qName.equalsIgnoreCase("bbib:type")) {
+		} else if (qName.equalsIgnoreCase("jp:type")) {
 				value=s;	
 		} 
 

@@ -33,10 +33,10 @@ public class ParseXmlDom {
 			Element docEle = dom.getDocumentElement();
 			String pageId = docEle.getAttribute("id");
 			System.out.println("Page ID is :: " + pageId);
-			parseDocument("bbib:page", docEle);
-			parseDocument("bbib:textinput", docEle);
-			parseDocument("bbib:radiobutton", docEle);
-			parseDocument("bbib:checkbox", docEle);
+			parseDocument("jp:page", docEle);
+			parseDocument("jp:textinput", docEle);
+			parseDocument("jp:radiobutton", docEle);
+			parseDocument("jp:checkbox", docEle);
 			printData();
 		} catch (ParserConfigurationException pce) {
 			pce.printStackTrace();
@@ -64,8 +64,8 @@ public class ParseXmlDom {
 		if (nl != null && nl.getLength() > 0) {
 			for (int i = 0; i < nl.getLength(); i++) {
 				Element el = (Element) nl.item(i);
-				String name = getTextValue(el, "bbib:name");
-				String type = getTextValue(el, "bbib:type");
+				String name = getTextValue(el, "jp:name");
+				String type = getTextValue(el, "jp:type");
 				nameType.put(name, type);
 			}
 		}

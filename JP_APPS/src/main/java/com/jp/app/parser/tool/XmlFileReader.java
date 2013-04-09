@@ -90,9 +90,9 @@ public class XmlFileReader extends DefaultHandler {
 
 	public void startElement(String uri, String localName, String qName,
 			Attributes attributes) throws SAXException {
-		if (qName.equalsIgnoreCase("bbib:page")) {
+		if (qName.equalsIgnoreCase("jp:page")) {
 			pageId = attributes.getValue("id");
-		}else if((qName.equalsIgnoreCase("bbib:staticselect"))){
+		}else if((qName.equalsIgnoreCase("jp:staticselect"))){
 			fieldId=attributes.getValue("name");
 			System.out.println("Page id ::" +pageId +" static text:   "+ fieldId);
 			type="text";
@@ -114,12 +114,12 @@ public class XmlFileReader extends DefaultHandler {
 
 	public void endElement(String uri, String localName, String qName)
 			throws SAXException {
-		if (qName.equalsIgnoreCase("bbib:location")) {
+		if (qName.equalsIgnoreCase("jp:location")) {
 			pageAlias = s;
 		} 
-		else if (qName.equalsIgnoreCase("bbib:name")) {
+		else if (qName.equalsIgnoreCase("jp:name")) {
 			fieldId = s;
-		} else if (qName.equalsIgnoreCase("bbib:type")) {
+		} else if (qName.equalsIgnoreCase("jp:type")) {
 			type = s;
 		}
 	}

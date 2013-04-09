@@ -129,7 +129,7 @@ public class LOC extends JFrame {
 		add(butGenReport, gbc, 1, 8, 1, 1);
 		butGenReport.setEnabled(false);
 
-		lblFooter = new JLabel("Utility Developed by Dimit Chadha(BBIB)");
+		lblFooter = new JLabel("Utility Developed by Dimit Chadha");
 		add(lblFooter, gbc, 0, 10, 1, 1);
 
 		butInitial.addActionListener(new addEvent());
