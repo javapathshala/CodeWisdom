@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<!-- a SessionFactory instance listed as /jndi/name -->
+	<session-factory>
+		<!-- properties -->
+		<property name="connection.driver_class">COM.ibm.db2.jdbc.app.DB2Driver</property>
+		<property name="connection.url">jdbc:db2:bibref12</property>
+		<property name="connection.username">iecp_app</property>
+		<property name="connection.password">iecp_app</property>
+		<property name="dialect">org.hibernate.dialect.DB2Dialect</property>
+		<property name="show_sql">true</property>
+		<property name="default_schema">IECP_APP</property>
+		<!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+		<!-- mapping files -->
+		<!--mapping resource="Employee.hbm.xml" /-->
+		<mapping resource="Users.hbm.xml" />
+		<mapping resource="Events.hbm.xml" />
+		<mapping resource="UserAccountsPersist.hbm.xml" />
+		<mapping resource="PersistenceUsers.hbm.xml" />
+
+		
+	</session-factory>
+</hibernate-configuration>
+
