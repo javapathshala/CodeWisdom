@@ -1,0 +1,35 @@
+<!--Run this ant file after runnning ear-build.xml only-->
+<!-- ear-build.xml ant tasks are now split into two files as 
+a) ear-build.xml 
+b) binding_build.xml.
+ear-build.xml now does not contain the wsdefaultbinding task & it is moved to binding_build.xml. 
+For creating the application EAR, first ear-build.xml ant file must be run with the JRE selection as "Run in the same JRE as in workspace". 
+For binding task binding_build.xml ant file is run with JRE selected as "separate JRE". 
+This is an exceptional case for running wsdefaultbinding task from within the RAD as both wsdefaultbinding & ejbdeploy task are not compatible with each other & can't be run from the same Ant script.
+This exception is confirmed by IBM product support team. Same holds true for JMS ear creation. Only difference between the old ant script & new one is that wsdefaultbinding task is moved to new ant script file
+-->
+
+<project name="iecb" default="default">
+	<property name="workspace.projects.root" value="${basedir}/../../../../" />
+	<taskdef name="wsDefaultBindings" classname="com.ibm.websphere.ant.tasks.DefaultBindings" />
+
+	<target name="default">
+		<property file="ear-build.properties" />
+		<property name="earfilename" value="${buildno}-${application}" />
+		<property name="tempear" value="${outdir}/${earfilename}_Temp.ear" />
+		<condition property="finalear" value="${outdir}/${earfilename}-${deploytype}.ear">
+			<isset property="deploytype" />
+		</condition>
+		<condition property="finalear" value="${outdir}/${earfilename}.ear">
+			<not>
+				<isset property="deploytype" />
+			</not>
+		</condition>
+		<antcall target="crib.addbinding" />
+	</target>
+
+	<target name="crib.addbinding">
+		<wsDefaultBindings ear="${tempear}" outputfile="${finalear}" ejbJndiPrefix="${buildno}" forceBindings="true" />
+	</target>
+
+</project>

@@ -1,0 +1,263 @@
+TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.TD_2 {
+	FONT-SIZE: 8pt; FONT-FAMILY: courier
+}
+.td_green {
+	FONT-SIZE: 8pt; COLOR: #339900; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.td_grey {
+	FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.td_greyBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+
+.td_bg_green {
+	background-color: #999933
+}
+
+.td_bg_purple {
+	background-color: #610D8C
+}
+
+.td_bg_black {
+	background-color: #000000
+}
+
+.td_bg_purple2 {
+	background-color: #786ab9
+}
+
+.td_bg_orange {
+	background-color: #FFE2A8
+}
+
+.td_bg_purple_light {
+	background-color: #F7F1Fa
+}
+
+
+.td_bg_purple_light1 {
+	background-color: #E0CDE9
+}
+
+.td_bg_purple_dark {
+	background-color: #660099
+}
+
+.td_bg_orange_dark {
+	background-color: #FF9933
+}
+
+.td_bg_white {
+	background-color: #FFFFFF
+}
+
+.td_bg_gray {
+	background-color: #F3F3F3
+} 
+
+.td_bg_gray2 {
+	background-color: #bfbebe
+} 
+
+.td_bg_gray3 {
+	background-color: #dadada
+} 
+.td_bg_orange1 {
+	background-color: #FFFAE8
+} 
+
+.td_bg_orange2 {
+	background-color: #FFEECC
+}
+
+.td_orange {
+	FONT-SIZE: 8pt; COLOR: #c76502; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.td_orange_small {
+	FONT-SIZE: 7pt; COLOR: #c76502; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.td_orangeBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #c76502; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+A {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.white_link {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.white_linksmall {
+	FONT-SIZE: 7pt; COLOR: #ffffff; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.white_linksmallbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; COLOR: #ffffff; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Form_heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #4f4f4f; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Form_fields {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Form_fields_small {
+	FONT-SIZE: 7pt; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Form_bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Form_numbering {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #ffe2a8; COLOR: #000000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif; TEXT-ALIGN: right
+}
+.Form_text {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif; TEXT-ALIGN: right
+}
+.FormHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.HmpgRightNav {
+	FONT-SIZE: 14pt; COLOR: #000000; FONT-FAMILY: arial,verdane,tahoma,geneva,helvetica,sans-serif
+}
+.HmpgRightNav2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: arial,verdane,tahoma,geneva,helvetica,sans-serif
+}
+.HmpgRightNav3 {
+	font-size: 13.7pt;color: #000000;}
+.HmpgTopJobs {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #e47801; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.HmpgLoginPrompt {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #786ab9; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Small {
+	FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Verdana, Geneva, Arial, san-serif
+}
+.SmallBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Verdana, Geneva, Arial, san-serif
+}
+.Small_grey {
+	FONT-SIZE: 7pt; COLOR: #666666; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Small_black {
+	FONT-SIZE: 7pt; COLOR: #000000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif; text-decoration: none
+}
+.Small_black2 {
+		font-family:Tahoma; font-size: 9px
+}
+.Small_greyBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; COLOR: #666666; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.TopBar {
+	FONT-WEIGHT: bold; FONT-SIZE: 7.5pt; COLOR: #000000; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.TopBar2 {
+	FONT-SIZE: 7.5pt; COLOR: #000000; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading2 {
+	FONT-SIZE: 14pt; COLOR: #666666; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #666666; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading4 {
+	FONT-SIZE: 14pt; COLOR: #e47801; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #e47801; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading8 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #786ab9; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading7 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading8 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #000000; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.Heading9 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: arial,verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.HmpgRightNav2 {
+	FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: verdane,arial, tahoma,geneva,helvetica,sans-serif
+}
+.red_text {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.red_textbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.red_small {
+	FONT-SIZE: 7pt; COLOR: #ff0000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+.red_smallbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; COLOR: #ff0000; FONT-FAMILY: verdana,tahoma,geneva,arial,helvetica,sans-serif
+}
+
+.login_heading_t {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF;
+}
+.login_heading {
+	color: #FFFFFF;
+	font-size: 18pt;
+	}
+.border1 {
+	border: 1px solid #BFBFBF;
+}
+.city_heading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 30px;font-weight: normal;
+}
+pre {
+	white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap; word-wrap: break-word;
+}
+.td_orange_highlight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 8pt;color: #ff0000;background-color: #FFE2A8;font-weight: bold;
+}
+.Heading_white {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #FFFFFF; FONT-FAMILY: verdana,arial,tahoma,geneva,arial,helvetica,sans-serif
+}
+.new_cls_td {
+	font-family : verdana,tahoma,geneva,arial,helvetica,sans-serif;font-size : 10pt;
+}
+.td_bg_blue {
+	background-color: #cce5ff
+}
+.td_green2 {
+color: #757526
+}
+.highlightit img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+-moz-opacity: 0.3;
+}
+.highlightit:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+-moz-opacity: 1;
+}
+
+
+/*------------------- New Classes-------------------------------------*/
+
+.txt_purple {color:#660099;}
+
+.txt_black {color:#000000;}
+
+.txt_orange {color:#e47801;}
+
+.txt_blue {color: #003399;}
+
+.link {text-decoration:none;}
+
+.link:hover {text-decoration:underline;}
+
+.border_gray { border: 1px solid #e1e1e1;}
+
+.border_gray1 { border: 1px solid #cccbcb;}
+
+.heading {font-size:16px;}
+
+.border_orange {border:#FFE2A8 4px solid;}
+
+.border_orange1 {border:#FF9933 1px solid;}

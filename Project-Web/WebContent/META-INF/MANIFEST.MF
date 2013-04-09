@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: AppHelpers.jar 
+ log4j-1.2.11.jar 
+ lucene-core-1.9-final.jar
+

@@ -1,0 +1,24 @@
+<project name="Test" default="default">
+
+	<property name="workspace.projects.root" value="${basedir}/../../../../" />
+	<property file="ear-build.properties" />
+
+	<target name="default">
+		<property name="earfilename" value="${application}" />
+		<property name="finalear" value="${outdir}/${earfilename}.ear" />
+		<mkdir dir="${outdir}" />
+		<antcall target="crib.buildEar" />
+
+		<earExport EARProjectName="${earproject}" EARExportFile="${finalear}" ExportSource="false" IncludeProjectMetaFiles="false" Overwrite="true" />
+	</target>
+
+	<target name="crib.buildEar" if="rebuild">
+		<eclipse.refreshLocal resource="${earproject}" depth="infinite" />
+		<antcall target="crib.buildProject">
+			<param name="projectName" value="${earproject}" />
+		</antcall>
+	</target>
+	<target name="crib.buildProject">
+		<projectBuild ProjectName="${projectName}" BuildType="Full" failonerror="true" DebugCompilation="false" />
+	</target>
+</project>
