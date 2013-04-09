@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!--Bean Class -->
+	<bean id="beanTarget" class="BeforeAfterAOP.BussinessLogicImpl" />
+
+	<!-- Advice Class-->
+	<bean id="theTracingBeforeAdvice" class="BeforeAfterAOP.TracingBeforeAdvice" />
+	<bean id="theTracingAfterAdvice" class="BeforeAfterAOP.TracingAfterAdvice" />
+	<!-- bean id="theTracingThrowAdvice" class="BeforeAfterAOP.TracingThrowAdvice" /-->
+	<!-- bean id="theTracingAroundAdvice" class="BeforeAfterAOP.TracingAroundAdvice" /-->
+	
+
+
+	<!-- Bean configuration :: Proxy Bean settings for weaving -->
+	
+	<bean id="BusinessLogicBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+			<value>BeforeAfterAOP.BussinessInterface</value>
+		</property>
+		<property name="target">
+			<ref local="beanTarget" />
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>theTracingBeforeAdvice</value>
+				<value>theTracingAfterAdvice</value>				
+				<!-- value>theTracingThrowAdvice</value-->
+				<!--value>theTracingAroundAdvice</value-->
+			</list>
+		</property>
+	</bean>
+
+</beans>

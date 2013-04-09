@@ -1,0 +1,73 @@
+.bodyNew{
+background:url("../images/buttons/demo.gif");
+}
+
+.newTable 
+{
+  font-size : 11px;
+  COLOR: #ffffff;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  background-color:#3399cc;
+}
+
+.tableText 
+{
+  font-size : 11px;
+  COLOR: #3399cc;
+  FONT-FAMILY: verdana, arial;
+  background-color:#ffffff;
+}
+
+.ajaxLight
+{
+	font-size : 11px;
+  	COLOR: #ffffff;
+  	FONT-FAMILY: verdana, arial;  	
+	background-color : #3399cc ;
+}
+
+.dottedLine
+{
+background:url("../images/lines/dotted_line_small.gif") repeat-x 50% top;
+}
+
+.rowOdd{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  background-color:#ffffff;
+}
+
+.rowEven{
+  font-size : 11px;
+  COLOR: #ffffff;
+  FONT-FAMILY: verdana, arial;
+  COLOR: #003366;
+  background-color:#DFEFF7;
+}
+
+/* Gradient 2 */
+.tb7 {
+	width: 221px;
+	background: transparent url('../images/cssImages/textbg.jpg') no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;
+}
+
+/* Image in Text Box */
+.textDecorate {
+	background:#FFFFFF url(../images/cssImages/search.png) no-repeat 4px 4px;
+	padding:4px 4px 4px 22px;
+	border:1px solid #CCCCCC;
+	width:230px;
+	height:25px;
+}
+.spinner{
+	background:#FFFFFF url(../images/cssImages/spinner.gif);
+	background-position: right center;
+	background-repeat: no-repeat;	
+}

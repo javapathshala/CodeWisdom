@@ -1,0 +1,1507 @@
+.utilNavBar 
+{
+	BACKGROUND: url(../images/logos/background72x1.gif) #003366; 
+	COLOR: #ffffff; FONT: bold 60% Verdana, Arial, Helvetica, sans-serif; 
+	HEIGHT: 72px; 
+	WIDTH: 100%
+}
+.eagle
+{
+	MARGIN-LEFT: 18px; 
+	POSITION: absolute; 
+	TOP: 8px
+}
+.bgc
+{
+	background-color : #9999cc ;
+}
+.topbrandnav
+{
+	RIGHT: 0px; 
+	MARGIN-RIGHT: 18px; 
+	PADDING-TOP: 7px; 
+	POSITION: absolute; 
+	TOP: 18px; 
+	HEIGHT: 29px
+}
+
+.bodytext
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  line-height :14px;
+}
+.bodytextac
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  line-height :14px;
+  TEXT-ALIGN: center;
+}
+.bodytextar
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  line-height :14px;
+  text-align: right;
+}
+.bodytextal
+{ COLOR: #CC3300; 
+  FONT-SIZE: 11px; 
+  FONT-FAMILY: verdana, arial; 
+  text-align: left;
+}
+.bgwcmlmt 
+{
+  background-color:#ffffff;
+  margin-left: 0;
+   margin-top: 0;
+   text: #000000;
+   link: #330066;
+   text: 000000;
+   vlink: #330066;
+}
+.bodytextredntbold
+{  
+   COLOR: #CC3300; 
+   FONT-SIZE: 11px; 
+   FONT-FAMILY: verdana, arial;
+}
+.bodytextacvc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  line-height :14px;
+  TEXT-ALIGN: center;
+  vertical-align: middle;
+}
+body
+{
+  COLOR: #000000;
+  MARGIN-LEFT: 0px;
+  MARGIN-right: 0px;
+  MARGIN-top: 0px; 
+}
+.bodytextvt
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  line-height :14px;
+  vertical-align: top;
+}
+.bodytextvb
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  line-height :14px;
+  vertical-align: bottom;
+}
+.bodytextred
+{  
+	COLOR: #CC3300; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	font-weight: bold;
+}
+
+.bodytextredal
+{  
+	COLOR: #CC3300; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	font-weight: bold; 
+	TEXT-ALIGN: left
+}
+
+.bodytextredar
+{  
+	COLOR: #CC3300; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	font-weight: bold; 
+	TEXT-ALIGN: right
+}
+
+.bodytexthighlight
+{  
+	COLOR: red; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial
+}
+
+.bodytexthighlightar
+{  
+	COLOR: red; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	TEXT-ALIGN: right
+}
+
+.bodytexthighlightarb
+{  
+	COLOR: red; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	TEXT-ALIGN: right;
+	font-weight:bold;            
+}
+
+.bodytexthighlightal
+{  
+	COLOR: red; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	TEXT-ALIGN: left
+}
+
+.bodytexthighlightac
+{  
+	COLOR: red; 
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: verdana, arial; 
+	TEXT-ALIGN: center
+}
+
+.bodytextblue
+{  
+	FONT-SIZE: 11px;  
+	COLOR: #3399CC;  
+	FONT-FAMILY: verdana, arial; 
+	font-weight: bold
+}
+
+.normal 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+}
+.normalal 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left
+}
+.normalar 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right
+}
+.normalarb 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  font-weight: bold
+}
+.normalac 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: center
+}
+.normalvt
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  vertical-align: top;
+}
+.width
+{
+	width:174;
+}
+.normalvb
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  vertical-align: bottom;
+}
+.normalarvt 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  vertical-align: top;
+}
+.normalvl 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  vertical-align: left;
+}
+.normalvr 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  vertical-align: right;
+}
+.normalalvt 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  vertical-align: top;
+}
+.normalalvtss
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  vertical-align: top;
+  font-style:italic; 
+  font-size:9.0pt
+}
+.normalarss
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  font-style:italic; 
+  font-size:9.0pt
+}
+.normalacsz
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: center;
+  font-style:italic; 
+  font-size:8.0pt
+}
+.normalacss
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: center;
+  font-size:8.0pt
+}
+.normalalvc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  vertical-align: middle;
+}
+.normalvc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  vertical-align: middle;
+}
+.normalalvb 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  vertical-align: bottom;
+}
+.normalarvt 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  vertical-align: top;
+}
+.normalarvc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  vertical-align: middle;
+}
+.normalarvb 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  vertical-align: bottom;
+}
+.normalalbggc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  background-color:#eeeeee;
+}
+.normalalbgwc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: left;
+  background-color:#ffffff;
+}
+.normalacbggc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: center;
+  background-color:#eeeeee;
+}
+.normalacbgwc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: center;
+  background-color:#ffffff;
+}
+.normalarbggc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  background-color:#eeeeee;
+}
+.normalarbgwc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  TEXT-ALIGN: right;
+  background-color:#ffffff;
+}
+.normalbggc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  background-color:#eeeeee;
+}
+.normalbgwc 
+{
+  font-size : 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  background-color:#ffffff;
+}
+a.normal 
+{
+  font-size : 11px;
+}
+.textarea
+{
+  FONT-SIZE: 8px;
+  COLOR: #000000;
+  FONT-FAMILY: verdana, Arial, Helvetica;
+}
+.pagetitle
+{
+  FONT-SIZE: 12px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+}
+.pagetitleac
+{
+  FONT-SIZE: 12px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+  TEXT-ALIGN: center;
+}
+.pagetitlevb
+{
+  FONT-SIZE: 12px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+  vertical-align: bottom;
+}
+.currencynegative
+{
+  COLOR: #FF0000;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: verdana, arial;
+}
+.boldcurrencynegative
+{
+  COLOR: #FF0000;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+}
+.boldcurrencynegativealvt
+{
+  COLOR: #FF0000;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  TEXT-ALIGN: left;
+  vertical-align: top;
+}
+.bodytextred
+{
+  COLOR: #CC3300;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+}
+.bodytextblue
+{
+  FONT-SIZE: 11px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+}
+a.brandnav:link
+{
+  FONT-FAMILY: Verdana, Arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  COLOR: #ffffff;
+  TEXT-DECORATION: none;
+}
+.brandnav
+{
+  FONT-FAMILY: Verdana, Arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  COLOR: #ffffff;
+  TEXT-DECORATION: none;
+}
+a.brandnav:hover
+{
+  FONT-FAMILY: Verdana, Arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  COLOR: #FFFFFF;
+  TEXT-DECORATION: none;
+}
+a.brandnav:visited
+{
+  FONT-FAMILY: Verdana, Arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  COLOR: #FFFFFF ;
+  text-decoration: none;
+}
+a.lhnavlink:visited
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  TEXT-DECORATION: none;
+  line-height:16px;
+}
+a.lhnavlink:link
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  TEXT-DECORATION: none;
+  line-height:16px;
+}
+a.lhnavlink:hover
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  TEXT-DECORATION: none;
+  line-height:16px;
+}
+a.lhnavlink:active
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  TEXT-DECORATION: none;
+  line-height:16px;
+}
+.tsandcs
+{
+  FONT-SIZE: 60%;
+  MARGIN: 10px;
+  COLOR: #000000;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif ;
+}
+a.bodylink 
+{
+  FONT-SIZE: 11px;
+  COLOR: #CC3300;
+  TEXT-DECORATION: underline;
+  line-height:16px;
+  ;
+  font-family: Verdana;
+}
+.breadcrumb
+{
+  FONT-WEIGHT: normal;
+  LINE-SPACING:14px;
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+a.breadcrumbnav:visited
+{
+  COLOR: #CC3300;
+  TEXT-DECORATION: none;
+  LINE-SPACING:14px;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+a.breadcrumbnav:link
+{
+  COLOR: #CC3300;
+  TEXT-DECORATION: none;
+  LINE-SPACING:14px;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+a.breadcrumbnav:hover
+{
+  COLOR: #CC3300;
+  TEXT-DECORATION: none;
+  LINE-SPACING:14px;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+a.breadcrumbnav:active
+{
+  COLOR: #CC3300;
+  TEXT-DECORATION: none;
+  LINE-SPACING:14px;
+  FONT-SIZE: 11px;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+td.nav
+{
+  VERTICAL-ALIGN: top;
+  WIDTH: 205px;
+}
+td.navvt
+{
+  VERTICAL-ALIGN: top;
+  WIDTH: 205px;
+  vertical-align: top;
+}
+.spacer
+{
+  WIDTH: 1px;
+  HEIGHT:1px;
+  FONT-SIZE: 1px;
+  LINE-SPACING:1px;
+}
+td.breaker 
+{
+  width : 187px;
+  vertical-align : top;
+}
+td.content
+{
+  VERTICAL-ALIGN: top;
+}
+.bodytextback
+{
+  COLOR: #003366;
+  FONT-FAMILY: Verdana, Arial;
+  font-weight: bold;
+  FONT-SIZE: 11px;
+}
+.bodytextnext
+{
+  COLOR: #339933;
+  FONT-FAMILY: Verdana, Arial;
+  font-weight: bold;
+  FONT-SIZE: 11px;
+}
+.bodytextem
+{
+  FONT-WEIGHT: bold;
+  COLOR: #003366;
+  FONT-FAMILY: Verdana;
+  font-size: 11px;
+  line-height:14px;
+}
+.lefthandnavheader
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 11px;
+  COLOR: #3399cc;
+  FONT-FAMILY: Verdana, Arial;
+  line-height: 14px;
+  text-decoration: none ;
+}
+.lefthandnav_link
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: Verdana, Arial;
+  line-height: 14px;
+}
+.private_banking 
+{
+  font-family: Verdana;
+}
+A.login_out_registernav:active
+{
+  FONT-SIZE: 11px;
+  LINE-SPACING:14px;
+  COLOR: #CC3300;
+  text-decoration: none ;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+A.login_out_registernav:hover
+{
+  FONT-SIZE: 11px;
+  LINE-SPACING:14px;
+  COLOR: #CC3300;
+  text-decoration: none ;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+A.login_out_registernav:link 
+{
+  FONT-SIZE: 11px;
+  LINE-SPACING:14px;
+  COLOR: #CC3300;
+  text-decoration: none ;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+A.login_out_registernav:visited 
+{
+  FONT-SIZE: 11px;
+  LINE-SPACING:14px;
+  COLOR: #CC3300;
+  text-decoration: none ;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.step_process_past 
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: Verdana, Arial ;
+}
+.step_process_current 
+{
+  FONT-SIZE: 11px;
+  COLOR: CC3300;
+  FONT-FAMILY: Verdana, Arial ;
+}
+.step_process_future 
+{
+  FONT-SIZE: 11px;
+  COLOR: #999999;
+  FONT-FAMILY: Verdana, Arial ;
+}
+.step_heading 
+{
+  FONT-SIZE: 11px;
+  COLOR: #CC3300;
+  FONT-FAMILY: Verdana, Arial;
+  font-weight : bold;
+}
+.step_headingcb 
+{
+  FONT-SIZE: 11px;
+  COLOR: #3399CC;
+  FONT-FAMILY: Verdana, Arial;
+  font-weight : bold;
+}
+.formfont 
+{
+  font-family:verdana, arial;
+  font-size: 11px;
+  color:#000000;
+}
+.lhnavlink
+{
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  color: 003366;
+  text-decoration: none;
+}
+a.lhnavlink:active
+{
+  color: 3399cc;
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+a.normal:link
+{
+  color: #330066;
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: normal;
+  TEXT-DECORATION: underline;
+}
+a.normal:visited
+{
+  color: #CC3300;
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: normal;
+  TEXT-DECORATION: underline;
+}
+a.normal:active
+{
+  color: blue;
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: normal;
+  TEXT-DECORATION: underline;
+}
+a.msg_link
+{
+  COLOR: CC3300;
+  TEXT-DECORATION: none;
+  font-size: 11px ;
+  font-family: Verdana;
+}
+a.msg_link:active
+{
+  COLOR: CC3300;
+  TEXT-DECORATION: none;
+  font-size: 11px ;
+}
+a.msg_link:hover
+{
+  COLOR: CC3300;
+  TEXT-DECORATION: none;
+  font-size: 11px ;
+}
+a.msg_link:link
+{
+  COLOR: CC3300;
+  TEXT-DECORATION: none;
+  font-size: 11px ;
+}
+a.msg_link:visited
+{
+  COLOR: CC3300;
+  TEXT-DECORATION: none;
+  font-size: 11px ;
+}
+.lhnavlinkcurrentlocation
+{
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  color: 3399cc;
+  text-decoration: none ;
+}
+a.lhnavlink:hover
+{
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 16px;
+  color: CC3300;
+  text-decoration: none ;
+}
+.banker_msg_link
+{
+  color: CC3300;
+  font-family: verdana;
+  font-size: 11px;
+  text-decoration: none;
+}
+.brand
+{
+  font-family: Verdana, Arial;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+#################################
+#
+# taken from main.css
+#
+
+.normal A:link  {
+  FONT-SIZE: 11px;
+  COLOR: #CC3300;
+  TEXT-DECORATION: underline;
+  line-height:16px;
+  ;
+  font-family: Verdana;
+}
+.normal A:visited  {
+  FONT-SIZE: 11px;
+  COLOR: #CC3300;
+  TEXT-DECORATION: underline;
+  line-height:16px;
+  ;
+  font-family: Verdana;
+}
+#red  {
+  color: red;
+  font-weight: bold;
+}
+#dkblue  {
+  color: #999999;
+  font-weight: bold;
+}
+#liteblue  {
+  color: #336699;
+  font-weight: bold;
+}
+.normal B  {
+  font-weight: bold;
+}
+.bold
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+}
+.boldal
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+}
+.boldar
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: right;
+}
+.boldbgc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  background-color:#eeeeee;
+}
+.boldalbgc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  background-color:#eeeeee;
+}
+.boldarbgc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: right;
+  background-color:#eeeeee;
+}
+.boldacbgc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: center;
+  background-color:#eeeeee;
+}
+.boldac
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: center;
+}
+.boldvc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  vertical-align: middle;
+}
+.boldalvc
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  vertical-align: middle;
+}
+.boldalvt
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  vertical-align: top;
+}
+.boldvt
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  vertical-align: top;
+}
+.boldalvtss
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  vertical-align: top;
+  font-style:italic; 
+  font-size:9.0pt
+}
+.boldalss
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  font-style:italic; 
+  font-size:9.0pt
+}
+.boldals
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  font-size:12.0pt
+}
+.boldalsz
+{
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  font-size:9.0pt
+}
+.boldalvb
+{
+  FONT-SIZE: 11px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+  TEXT-ALIGN: left;
+  vertical-align: bottom;
+}
+.bold A:link  {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 11pt;
+}
+.bold A:visited  {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 7.5pt;
+}
+#red  {
+  color: red;
+  font-weight: bold;
+}
+#dkblue  {
+  color: #999999;
+  font-weight: bold;
+}
+#liteblue  {
+  color: #336699;
+  font-weight: bold;
+}
+##############################
+
+
+.header {
+  }
+.header  {
+  FONT-SIZE: 12px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+}
+.redheader  {
+  FONT-SIZE: 12px;
+  COLOR: red;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+}
+.header SPAN {
+  FONT-SIZE: 12px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+}
+################################
+
+.filter {
+  }
+.filter  {
+  color: #3399cc;
+  font-family: Verdana, Arial, Helvetica;
+}
+################################
+
+.error {
+  }
+.error  {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 8.5pt;
+}
+.errorvc  {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 8.5pt;
+  vertical-align: middle;
+}
+.errorbgc  {
+  color: #15317E;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 8.5pt;
+  background-color:#FFF8C6;
+}
+################################
+
+
+.inputstyle {
+  color: #003366;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 11pt;
+  line-height :14px;
+}
+.selectstyle {
+  color: #003366;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 11pt;
+}
+input {
+  color: #003366;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 8pt;
+}
+select {
+  color: #003366;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 8pt;
+}
+################################
+.subheader {
+  }
+.subheader  {
+  FONT-SIZE: 12px;
+  COLOR: #3399CC;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height: 14px;
+}
+################################
+
+.bodytxt {
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 10pt 
+;
+}
+################################
+
+.smlltxt {
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 7.5pt 
+;
+}
+################################
+
+.whitetxt {
+  font-family: Verdana, Arial, Helvetica;
+  color: #FFFFFF;
+  font-size: 8pt 
+;
+}
+
+
+.boldfont12
+{
+  FONT-SIZE: 12px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+}
+.boldfont9
+{
+  FONT-SIZE: 9px;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  font-weight: bold;
+  line-height :14px;
+}
+.normalwhite 
+{
+  font-size : 11px;
+  COLOR: #eeeeee;
+  FONT-FAMILY: verdana, arial;
+}
+.normalgrey 
+{
+  font-size : 11px;
+  COLOR: #ffffff;
+  FONT-FAMILY: verdana, arial;
+}
+.fontcolor 
+{
+  COLOR: #FF0000;
+}
+.fontcolorcc 
+{
+  COLOR: #CC3300;
+  TEXT-DECORATION: underline;
+}
+.fontsz 
+{
+	font-size:0.8pc;
+}
+.al 
+{
+  TEXT-ALIGN: left
+}
+.ar 
+{
+  TEXT-ALIGN: right
+}
+.ac 
+{
+  TEXT-ALIGN: center
+}
+.vt
+{
+  vertical-align: top;
+}
+.arvt 
+{
+  TEXT-ALIGN: right;
+  vertical-align: top;
+}
+.vl 
+{
+  vertical-align: left;
+}
+.vr 
+{
+  vertical-align: right;
+}
+.alvt 
+{
+  TEXT-ALIGN: left;
+  vertical-align: top;
+}
+.alvtss
+{
+  TEXT-ALIGN: left;
+  vertical-align: top;
+  font-style:italic; 
+  font-size:9.0pt
+}
+.alarss
+{
+  TEXT-ALIGN: right;
+  font-style:italic; 
+  font-size:9.0pt
+}
+.arsz
+{
+  TEXT-ALIGN: right;
+  font-size:9.0pt
+}
+.alsz
+{
+  TEXT-ALIGN: left;
+  font-size:9.0pt
+}
+.acsz
+{
+  TEXT-ALIGN: center;
+  font-style:italic; 
+  font-size:8.0pt
+}
+.alvc 
+{
+  TEXT-ALIGN: left;
+  vertical-align: middle;
+}
+.vc 
+{
+  vertical-align: middle;
+}
+.vb 
+{
+  vertical-align: bottom;
+}
+.alvb 
+{
+  TEXT-ALIGN: left;
+  vertical-align: bottom;
+}
+.arvt 
+{
+  TEXT-ALIGN: right;
+  vertical-align: top;
+}
+.arvc 
+{
+  TEXT-ALIGN: right;
+  vertical-align: middle;
+}
+.arvb 
+{
+  TEXT-ALIGN: right;
+  vertical-align: bottom;
+}
+.albggc 
+{
+  TEXT-ALIGN: left;
+  background-color:#eeeeee;
+}
+.albgwc 
+{
+  TEXT-ALIGN: left;
+  background-color:#ffffff;
+}
+.acbggc 
+{
+  TEXT-ALIGN: center;
+  background-color:#eeeeee;
+}
+.acbgwc 
+{
+  TEXT-ALIGN: center;
+  background-color:#ffffff;
+}
+.arbggc 
+{
+  TEXT-ALIGN: right;
+  background-color:#eeeeee;
+}
+.arbgwc 
+{
+  TEXT-ALIGN: right;
+  background-color:#ffffff;
+}
+.bggc 
+{
+  background-color:#eeeeee;
+}
+.bgngc 
+{
+  background-color:#330066;
+}
+.bgwc 
+{
+  background-color:#ffffff;
+}
+.filter_b2
+{
+	background-image: url("../images/lines/dotted_line_small.gif");
+}
+.cnptitle
+{
+	TEXT-ALIGN: left;
+    vertical-align: top;
+}
+.acvc
+{
+	TEXT-ALIGN: center;
+    vertical-align: center;
+}
+.navbar_b
+{
+	background-image: url("images/lines/dotted_line_small.gif");
+}
+.fontbold
+{
+   font-weight: bold;
+}
+.normalacbggcfontbold 
+{
+  TEXT-ALIGN: center;
+  font-size : 11px;
+  font-weight: bold;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  background-color:#eeeeee;
+}
+.normalalbggcfontbold 
+{
+  TEXT-ALIGN: left;
+  font-size : 11px;
+  font-weight: bold;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  background-color:#eeeeee;
+}
+.normalalbgwcfontbold 
+{
+  TEXT-ALIGN: left;
+  font-size : 11px;
+  font-weight: bold;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+  background-color:#ffffff;
+}
+.normalalfontbold 
+{
+  TEXT-ALIGN: left;
+  font-size : 11px;
+  font-weight: bold;
+  COLOR: #003366;
+  FONT-FAMILY: verdana, arial;
+}
+.fontboldac
+{
+   font-weight: bold;
+   TEXT-ALIGN: center;
+}
+.fontboldal
+{
+   font-weight: bold;
+   TEXT-ALIGN: left;
+}
+.fontboldar
+{
+   font-weight: bold;
+   TEXT-ALIGN: right;
+}
+.ct
+{
+	COLOR : red; 
+	TEXT-DECORATION : none;
+}
+.arbggc 
+{
+  TEXT-ALIGN: left;
+  background-color:#eeeeee;
+}
+.arbgwc 
+{
+  TEXT-ALIGN: left;
+  background-color:#ffffff;
+}
+.submitlink
+{
+	text-decoration:underline;
+	text-align :left;
+	align :left;
+	color:#cc3300;
+	background-color:transparent;
+	margin:0;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	cursor:hand;
+}
+
+
+#tt 
+{ 
+  position: fixed;
+  font-size: 11px;
+  color: #666;
+  right: 0px;
+  top: 2px;
+  _top: expression( ( 2 + ( ignoreMe = document.body.scrollTop ) ) + 'px' ); 
+  display:block; 
+  padding: 2px 2px 2px 2px; 
+  margin: 2px; 
+  background:#ffb;
+  border: solid 2px #bbb;
+} 
+
+* html #tt {position:absolute;}
+
+
+#ttcont 
+{ 
+  display:block; 
+
+} 
+
+.help_icon
+{
+  position: absolute;
+  right: 30px;
+  margin-top: -20px;
+  _margin-top: 0px;
+}
+.smallbr
+{
+	font-size: 11px;
+    line-height :1;
+}
