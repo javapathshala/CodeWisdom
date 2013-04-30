@@ -26,8 +26,14 @@
 
 		<!-- Disable the second-level cache -->
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		
+		<property name="hbm2ddl.auto">create</property>
 
-		<mapping resource="Employee.hbm.xml" />
+		<!-- mapping resource="Employee.hbm.xml" /-->
+		<!-- mapping class="com.jp.hib.entities.Employee"/-->
+				<!-- mapping class="com.jp.hib.entities.UserDetails"/-->
+				<mapping class="com.jp.hib.entities.Person"/>
+				<mapping class="com.jp.hib.entities.Vehicle"/>
 	</session-factory>
 
 

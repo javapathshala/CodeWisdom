@@ -18,8 +18,8 @@ import java.util.List;
 
 import org.hibernate.Session;
 
+import com.jp.hib.connection.HibHelper;
 import com.jp.hib.entities.Employee;
-import com.jp.hib.frw.HibHelper;
 
 /**
  * @author dimit.chadha
@@ -108,7 +108,7 @@ public class BasicRun {
 		Employee insertEmp = new Employee();
 		insertEmp.setName("Dimit");
 		insertEmp.setAddress("Pragati");
-		insertEmp.setSalary(200);
+		insertEmp.setSalary(20014);
 		session.beginTransaction();
 		session.save(insertEmp);
 		session.getTransaction().commit();

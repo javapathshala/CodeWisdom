@@ -4,7 +4,7 @@
  * To change the template for this generated file go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
-package com.jp.hib.frw;
+package com.jp.hib.connection;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -50,7 +50,6 @@ public class HibHelper {
 		if (s == null) {
 			s = sessionFactory.openSession();
 			session.set(s);
-
 		}
 		return s;
 	}
