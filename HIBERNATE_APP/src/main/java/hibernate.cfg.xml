@@ -32,8 +32,10 @@
 		<!-- mapping resource="Employee.hbm.xml" /-->
 		<!-- mapping class="com.jp.hib.entities.Employee"/-->
 				<!-- mapping class="com.jp.hib.entities.UserDetails"/-->
-				<mapping class="com.jp.hib.entities.Person"/>
-				<mapping class="com.jp.hib.entities.Vehicle"/>
+				<!-- mapping class="com.jp.hib.entities.onetoone.Person"/>
+				<mapping class="com.jp.hib.entities.onetoone.Vehicle"/-->
+					<mapping class="com.jp.hib.entities.onetomany.User"/>
+					<mapping class="com.jp.hib.entities.onetomany.Cars"/>
 	</session-factory>
 
 

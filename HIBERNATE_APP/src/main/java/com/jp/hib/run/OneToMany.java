@@ -17,32 +17,38 @@ package com.jp.hib.run;
 import org.hibernate.Session;
 
 import com.jp.hib.connection.HibHelper;
+import com.jp.hib.entities.onetomany.Cars;
+import com.jp.hib.entities.onetomany.User;
 import com.jp.hib.entities.onetoone.Person;
 import com.jp.hib.entities.onetoone.Vehicle;
 
 /**
  * @author dimit.chadha
  */
-public class OneToOne {
+public class OneToMany {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		Person person = new Person();
-		person.setPersonName("Person 2");
+		User user = new User();
+		user.setUserName("User 1");
 
-		Vehicle vehicle = new Vehicle();
-		vehicle.setVehicleName("Vehicle 2");
-
-		person.setVehicle(vehicle);
+		Cars car1 = new Cars();
+		car1.setCarName("Fiat");
+		user.getCars().add(car1);
+		
+		Cars car2 = new Cars();
+		car2.setCarName("Santro");
+		user.getCars().add(car2);
+		
 		Session session = HibHelper.getSession();
 		session.beginTransaction();
 
-		session.save(person);
-		session.save(vehicle);
-
+		session.save(user);
+		session.save(car1);
+		session.save(car2);
 		session.getTransaction().commit();
 		HibHelper.closeSession();
 
@@ -50,9 +56,9 @@ public class OneToOne {
 		 session = HibHelper.getSession();
 		 session.beginTransaction();
 		
-		 person=null;
-		 person= (Person) session.get(Person.class, 1);
-		 System.out.println(person);
+		 user=null;
+		 user= (User) session.get(User.class, 1);
+		 System.out.println(user);
 		
 		 session.getTransaction().commit();
 		 HibHelper.closeSession();

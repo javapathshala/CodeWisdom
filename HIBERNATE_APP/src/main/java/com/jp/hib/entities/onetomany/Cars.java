@@ -12,7 +12,7 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.hib.entities;
+package com.jp.hib.entities.onetomany;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,53 +25,44 @@ import javax.persistence.Table;
  * @author dimit.chadha
  */
 @Entity
-@Table(name = "VEHICLE")
-public class Vehicle {
+@Table(name = "CARS")
+public class Cars {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "VEHICLE_ID")
-	private int vehicleId;
+	@Column(name = "CAR_ID")
+	private int carId;
 
-	@Column(name = "VEHICLE_NAME")
-	private String vehicleName;
-
-	/**
-	 * @return the vehicleId
-	 */
-	public int getVehicleId() {
-		return vehicleId;
-	}
+	@Column(name = "CAR_NAME")
+	private String carName;
 
 	/**
-	 * @param vehicleId
-	 *            the vehicleId to set
+	 * @return the carId
 	 */
-	public void setVehicleId(int vehicleId) {
-		this.vehicleId = vehicleId;
+	public int getCarId() {
+		return carId;
 	}
 
 	/**
-	 * @return the vehicleName
+	 * @param carId
+	 *            the carId to set
 	 */
-	public String getVehicleName() {
-		return vehicleName;
+	public void setCarId(int carId) {
+		this.carId = carId;
 	}
 
 	/**
-	 * @param vehicleName
-	 *            the vehicleName to set
+	 * @return the carName
 	 */
-	public void setVehicleName(String vehicleName) {
-		this.vehicleName = vehicleName;
+	public String getCarName() {
+		return carName;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
+	/**
+	 * @param carName
+	 *            the carName to set
 	 */
-	@Override
-	public String toString() {
-		return "Vehicle [vehicleId=" + vehicleId + ", vehicleName=" + vehicleName + "]";
+	public void setCarName(String carName) {
+		this.carName = carName;
 	}
-
 }
