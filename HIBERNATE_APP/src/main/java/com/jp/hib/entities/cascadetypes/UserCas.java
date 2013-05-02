@@ -12,11 +12,12 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.hib.entities.onetomany;
+package com.jp.hib.entities.cascadetypes;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,7 +35,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "USER")
-public class User {
+public class UserCas {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -45,9 +46,10 @@ public class User {
 	private String userName;
 
 	//Below one creates another table
-	@OneToMany
+	//Using cascade - saved unsaved entities in case of releation. no need to implicity session.save 
+	@OneToMany (cascade=CascadeType.PERSIST)
 	@JoinTable(name="USER_CAR", joinColumns = @JoinColumn(name = "USER_ID"), inverseJoinColumns = @JoinColumn(name = "CAR_ID"))
-	private Collection<Cars> cars = new ArrayList<Cars>();
+	private Collection<CarsCas> cars = new ArrayList<CarsCas>();
 
 	/**
 	 * @return the userId
@@ -82,7 +84,7 @@ public class User {
 	/**
 	 * @return the cars
 	 */
-	public Collection<Cars> getCars() {
+	public Collection<CarsCas> getCars() {
 		return cars;
 	}
 
@@ -90,7 +92,7 @@ public class User {
 	 * @param cars
 	 *            the cars to set
 	 */
-	public void setCars(Collection<Cars> cars) {
+	public void setCars(Collection<CarsCas> cars) {
 		this.cars = cars;
 	}
 

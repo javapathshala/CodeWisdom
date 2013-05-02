@@ -17,49 +17,43 @@ package com.jp.hib.run;
 import org.hibernate.Session;
 
 import com.jp.hib.connection.HibHelper;
-import com.jp.hib.entities.onetomany.Cars;
-import com.jp.hib.entities.onetomany.User;
+import com.jp.hib.entities.inher.tableclass.FourWheeler;
+import com.jp.hib.entities.inher.tableclass.TwoWheeler;
+import com.jp.hib.entities.inher.tableclass.Vehicle;
 
 /**
  * @author dimit.chadha
  */
-public class OneToMany {
+public class InheritanceTableClass {
 
 	/**
+	 * When table per class strategy
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		User user = new User();
-		user.setUserName("User3");
+		Vehicle vehicle = new Vehicle();
+		vehicle.setVehicleName("Car");
 
-		Cars car1 = new Cars();
-		car1.setCarName("Fiat2");
-		user.getCars().add(car1);
+		TwoWheeler twoWheeler = new TwoWheeler();
+		twoWheeler.setVehicleName("Passion Plus");
+		twoWheeler.setSteeringHandle("Bike Steering Handle");
 
-		Cars car2 = new Cars();
-		car2.setCarName("Santro2");
-		user.getCars().add(car2);
+		FourWheeler fourWheeler = new FourWheeler();
+		fourWheeler.setVehicleName("Audi");
+		fourWheeler.setSteeringWheel("Audi Steering Handle");
 
 		Session session = HibHelper.getSession();
 		session.beginTransaction();
 
-		session.save(user);
-		session.save(car1);
-		session.save(car2);
-		session.getTransaction().commit();
-		HibHelper.closeSession();
-
-		// Get Cars based on User ID
-		session = HibHelper.getSession();
-		session.beginTransaction();
-
-		user = null;
-		user = (User) session.get(User.class, 2);
-		System.out.println(user);
+		session.save(vehicle);
+		session.save(twoWheeler);
+		session.save(fourWheeler);
 
 		session.getTransaction().commit();
 		HibHelper.closeSession();
+
 	}
 
 }

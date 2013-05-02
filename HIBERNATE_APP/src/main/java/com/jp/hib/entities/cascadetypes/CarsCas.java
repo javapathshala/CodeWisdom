@@ -12,7 +12,7 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.hib.entities.onetomany;
+package com.jp.hib.entities.cascadetypes;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,7 +26,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "CARS")
-public class Cars {
+public class CarsCas {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -35,6 +35,10 @@ public class Cars {
 
 	@Column(name = "CAR_NAME")
 	private String carName;
+
+	// @ManyToOne
+	// @NotFound(action=NotFoundAction.IGNORE)
+	// private User user;
 
 	/**
 	 * @return the carId
@@ -66,13 +70,19 @@ public class Cars {
 		this.carName = carName;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "Cars [carId=" + carId + ", carName=" + carName + "]";
-	}
-	
-	
+	// /**
+	// * @return the user
+	// */
+	// public User getUser() {
+	// return user;
+	// }
+	//
+	// /**
+	// * @param user
+	// * the user to set
+	// */
+	// public void setUser(User user) {
+	// this.user = user;
+	// }
+
 }

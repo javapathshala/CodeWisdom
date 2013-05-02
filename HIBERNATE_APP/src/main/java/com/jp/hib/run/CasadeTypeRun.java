@@ -17,36 +17,41 @@ package com.jp.hib.run;
 import org.hibernate.Session;
 
 import com.jp.hib.connection.HibHelper;
-import com.jp.hib.entities.onetomany.Cars;
-import com.jp.hib.entities.onetomany.User;
+import com.jp.hib.entities.cascadetypes.CarsCas;
+import com.jp.hib.entities.cascadetypes.UserCas;
+
 
 /**
  * @author dimit.chadha
  */
-public class OneToMany {
+public class CasadeTypeRun {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		User user = new User();
+		UserCas user = new UserCas();
 		user.setUserName("User3");
 
-		Cars car1 = new Cars();
-		car1.setCarName("Fiat2");
-		user.getCars().add(car1);
+		CarsCas car1 = new CarsCas();
+		car1.setCarName("Fiat");
+		
 
-		Cars car2 = new Cars();
-		car2.setCarName("Santro2");
+		CarsCas car2 = new CarsCas();
+		car2.setCarName("Jeep");
+		
+		user.getCars().add(car1);
 		user.getCars().add(car2);
 
 		Session session = HibHelper.getSession();
 		session.beginTransaction();
 
-		session.save(user);
-		session.save(car1);
-		session.save(car2);
+		//session.save(user);
+//		session.save(car1);
+//		session.save(car2);
+		
+		session.persist(user);
 		session.getTransaction().commit();
 		HibHelper.closeSession();
 
@@ -55,7 +60,7 @@ public class OneToMany {
 		session.beginTransaction();
 
 		user = null;
-		user = (User) session.get(User.class, 2);
+		user = (UserCas) session.get(UserCas.class, 2);
 		System.out.println(user);
 
 		session.getTransaction().commit();

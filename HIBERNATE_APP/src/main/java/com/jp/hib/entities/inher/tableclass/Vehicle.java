@@ -12,67 +12,70 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.hib.entities.onetomany;
+package com.jp.hib.entities.inher.tableclass;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 /**
  * @author dimit.chadha
  */
 @Entity
-@Table(name = "CARS")
-public class Cars {
+@Table(name = "VEHICLE")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Vehicle {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "CAR_ID")
-	private int carId;
+	@GeneratedValue(strategy = GenerationType.TABLE)
+	@Column(name = "VEHICLE_ID")
+	private int vehicleId;
 
-	@Column(name = "CAR_NAME")
-	private String carName;
+	@Column(name = "VEHICLE_NAME")
+	private String vehicleName;
 
 	/**
-	 * @return the carId
+	 * @return the vehicleId
 	 */
-	public int getCarId() {
-		return carId;
+	public int getVehicleId() {
+		return vehicleId;
 	}
 
 	/**
-	 * @param carId
-	 *            the carId to set
+	 * @param vehicleId
+	 *            the vehicleId to set
 	 */
-	public void setCarId(int carId) {
-		this.carId = carId;
+	public void setVehicleId(int vehicleId) {
+		this.vehicleId = vehicleId;
 	}
 
 	/**
-	 * @return the carName
+	 * @return the vehicleName
 	 */
-	public String getCarName() {
-		return carName;
+	public String getVehicleName() {
+		return vehicleName;
 	}
 
 	/**
-	 * @param carName
-	 *            the carName to set
+	 * @param vehicleName
+	 *            the vehicleName to set
 	 */
-	public void setCarName(String carName) {
-		this.carName = carName;
+	public void setVehicleName(String vehicleName) {
+		this.vehicleName = vehicleName;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Cars [carId=" + carId + ", carName=" + carName + "]";
+		return "Vehicle [vehicleId=" + vehicleId + ", vehicleName=" + vehicleName + "]";
 	}
-	
-	
+
 }
