@@ -1,5 +1,5 @@
 /*
- * File: StockDetail.java
+ * File: UserDetails.java
  * Date: 30-Apr-2013
  *
  * This source code is part of Java Pathshala-Wisdom Being Shared.
@@ -12,62 +12,59 @@
  * 
  * Visit us at www.javapathshala.com
  */
-package com.jp.hib.entities.inher.tableclass;
+package com.jp.hib.entities.hql;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 /**
  * @author dimit.chadha
  */
+
 @Entity
-@Table(name = "VEHICLE")
-//@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Vehicle {
+@Table(name = "USER_DETAILS")
+public class UserDetails {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
-	@Column(name = "VEHICLE_ID")
-	private int vehicleId;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "USER_ID")
+	private int userId;
 
-	@Column(name = "VEHICLE_NAME")
-	private String vehicleName;
+	@Column(name = "USER_NAME")
+	private String userName;
 
 	/**
-	 * @return the vehicleId
+	 * @return the userId
 	 */
-	public int getVehicleId() {
-		return vehicleId;
+	public int getUserId() {
+		return userId;
 	}
 
 	/**
-	 * @param vehicleId
-	 *            the vehicleId to set
+	 * @param userId
+	 *            the userId to set
 	 */
-	public void setVehicleId(int vehicleId) {
-		this.vehicleId = vehicleId;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	/**
-	 * @return the vehicleName
+	 * @return the userName
 	 */
-	public String getVehicleName() {
-		return vehicleName;
+	public String getUserName() {
+		return userName;
 	}
 
 	/**
-	 * @param vehicleName
-	 *            the vehicleName to set
+	 * @param userName
+	 *            the userName to set
 	 */
-	public void setVehicleName(String vehicleName) {
-		this.vehicleName = vehicleName;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	/*
@@ -76,7 +73,7 @@ public class Vehicle {
 	 */
 	@Override
 	public String toString() {
-		return "Vehicle [vehicleId=" + vehicleId + ", vehicleName=" + vehicleName + "]";
+		return "UserDetails [userId=" + userId + ", userName=" + userName + "]";
 	}
 
 }

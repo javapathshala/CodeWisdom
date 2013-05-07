@@ -27,7 +27,7 @@
 		<!-- Disable the second-level cache -->
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
 		
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 
 		<!-- mapping resource="Employee.hbm.xml" /-->
 		<!-- mapping class="com.jp.hib.entities.Employee"/-->
@@ -46,10 +46,13 @@
 					<mapping class="com.jp.hib.entities.inher.singletable.TwoWheeler"/>
 					<mapping class="com.jp.hib.entities.inher.singletable.FourWheeler"/-->
 					
-					<mapping class="com.jp.hib.entities.inher.tableclass.Vehicle"/>
+					<!-- mapping class="com.jp.hib.entities.inher.tableclass.Vehicle"/>
 					<mapping class="com.jp.hib.entities.inher.tableclass.TwoWheeler"/>
-					<mapping class="com.jp.hib.entities.inher.tableclass.FourWheeler"/>
+					<mapping class="com.jp.hib.entities.inher.tableclass.FourWheeler"/-->
 					
+					<!-- mapping class="com.jp.hib.entities.hql.UserDetails"/-->
+					<mapping class="com.jp.hib.entities.named.queries.UserDetails"/>
+				
 					
 	</session-factory>
 
