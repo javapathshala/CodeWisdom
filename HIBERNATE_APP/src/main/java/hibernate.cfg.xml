@@ -50,8 +50,8 @@
 					<mapping class="com.jp.hib.entities.inher.tableclass.TwoWheeler"/>
 					<mapping class="com.jp.hib.entities.inher.tableclass.FourWheeler"/-->
 					
-					<!-- mapping class="com.jp.hib.entities.hql.UserDetails"/-->
-					<mapping class="com.jp.hib.entities.named.queries.UserDetails"/>
+					<mapping class="com.jp.hib.entities.hql.UserDetails"/>
+					<!--mapping class="com.jp.hib.entities.named.queries.UserDetails"/-->
 				
 					
 	</session-factory>

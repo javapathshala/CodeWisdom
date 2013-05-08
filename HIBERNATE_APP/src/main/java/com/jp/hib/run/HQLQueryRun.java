@@ -39,20 +39,20 @@ public class HQLQueryRun {
 		session.beginTransaction();
 
 		// session.save(userDetails);
-		//
-		// userDetails = new UserDetails();
-		// userDetails.setUserName("User Name-2");
-		// session.save(userDetails);
-		//
-		// userDetails = new UserDetails();
-		// userDetails.setUserName("User Name-3");
-		// session.save(userDetails);
-		//
-		// userDetails = new UserDetails();
-		// userDetails.setUserName("User Name-4");
-		// session.save(userDetails);
-		//
-		// session.getTransaction().commit();
+		
+		 userDetails = new UserDetails();
+		 userDetails.setUserName("User Name-2");
+		 session.save(userDetails);
+		
+		 userDetails = new UserDetails();
+		 userDetails.setUserName("User Name-3");
+		 session.save(userDetails);
+		
+		 userDetails = new UserDetails();
+		 userDetails.setUserName("User Name-4");
+		 session.save(userDetails);
+		
+		 //session.getTransaction().commit();
 		// HibHelper.closeSession();
 
 		// Get the list
